@@ -1,0 +1,4 @@
+/home/ouecon005/DScourseS24/ProblemSets/PS4
+Sun Feb 18 16:38:04 CST 2024
+export LSCRATCH=/lscratch/17692730
+srun: error: c194: task 0: Exited with exit code 1
