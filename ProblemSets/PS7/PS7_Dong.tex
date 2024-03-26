@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[top = 1in, bottom = 1in, left = 1in, right = 1in]{geometry}
+\title{Problem Set 7}
+\author{Bowei Dong }
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Q6}
+% latex table generated in R 4.0.5 by xtable 1.8-4 package
+% Mon Mar 25 20:31:22 2024
+\begin{table}[ht]
+\centering
+\begin{tabular}{rllllll}
+  \hline
+ &    logwage &      hgc &   college &     tenure &      age &   married \\ 
+  \hline
+X & Min.   :0.00494   & Min.   : 0.0   & Length:2229        & Min.   : 0.000   & Min.   :34.00   & Length:2229        \\ 
+  X.1 & 1st Qu.:1.46037   & 1st Qu.:12.0   & Class :character   & 1st Qu.: 1.583   & 1st Qu.:36.00   & Class :character   \\ 
+  X.2 & Median :1.62519   & Median :12.0   & Mode  :character   & Median : 3.750   & Median :39.00   & Mode  :character   \\ 
+  X.3 & Mean   :1.62519   & Mean   :13.1   &  & Mean   : 5.971   & Mean   :39.15   &  \\ 
+  X.4 & 3rd Qu.:1.83740   & 3rd Qu.:15.0   &  & 3rd Qu.: 9.333   & 3rd Qu.:42.00   &  \\ 
+  X.5 & Max.   :2.26150   & Max.   :18.0   &  & Max.   :25.917   & Max.   :46.00   &  \\ 
+   \hline
+\end{tabular}
+\end{table}
+This variable is MAR.
+
+\section*{Q7}
+\subsection*{Q7-a}
+\begin{table}[h]
+\centering
+\begin{tabular}[t]{lc}
+\hline
+  & Model 1\\
+\hline
+(Intercept) & \num{0.708}\\
+ & (\num{0.116})\\
+hgc & \num{0.050}\\
+ & \vphantom{1} (\num{0.004})\\
+collegenot college grad & \num{0.168}\\
+ & (\num{0.026})\\
+tenure & \num{0.038}\\
+ & (\num{0.004})\\
+ & \num{-0.001}\\
+ & (\num{0.0002})\\
+age & \num{0.0002}\\
+ & (\num{0.002})\\
+marriedsingle & \num{-0.027}\\
+ & (\num{0.014})\\
+\hline
+Num.Obs. & \num{2229}\\
+R2 & \num{0.147}\\
+R2 Adj. & \num{0.145}\\
+AIC & \num{1091.2}\\
+BIC & \num{1136.8}\\
+Log.Lik. & \num{-537.580}\\
+F & \num{63.973}\\
+RMSE & \num{0.31}\\
+\hline
+\end{tabular}
+\end{table}
+\subsection*{Q7-b}
+\begin{table}[h]
+\centering
+\begin{tabular}[t]{lc}
+\hline
+  & Model 2\\
+\hline
+(Intercept) & \num{0.708}\\
+ & (\num{0.116})\\
+hgc & \num{0.050}\\
+ & \vphantom{1} (\num{0.004})\\
+collegenot college grad & \num{0.168}\\
+ & (\num{0.026})\\
+tenure & \num{0.038}\\
+ & (\num{0.004})\\
+ & \num{-0.001}\\
+ & (\num{0.0002})\\
+age & \num{0.0002}\\
+ & (\num{0.002})\\
+marriedsingle & \num{-0.027}\\
+ & (\num{0.014})\\
+\hline
+Num.Obs. & \num{2229}\\
+R2 & \num{0.147}\\
+R2 Adj. & \num{0.145}\\
+AIC & \num{1091.2}\\
+BIC & \num{1136.8}\\
+Log.Lik. & \num{-537.580}\\
+F & \num{63.973}\\
+RMSE & \num{0.31}\\
+\hline
+\end{tabular}
+\end{table}
+\subsection*{Q7-c}
+\begin{table}[h]
+\centering
+\begin{tabular}[t]{lc}
+\hline
+  & Model 3\\
+\hline
+(Intercept) & \num{0.708}\\
+ & (\num{0.116})\\
+hgc & \num{0.050}\\
+ & \vphantom{1} (\num{0.004})\\
+tenure & \num{0.038}\\
+ & (\num{0.004})\\
+ & \num{-0.001}\\
+ & (\num{0.0002})\\
+collegenot college grad & \num{0.168}\\
+ & (\num{0.026})\\
+age & \num{0.0002}\\
+ & (\num{0.002})\\
+marriedsingle & \num{-0.027}\\
+ & (\num{0.014})\\
+\hline
+Num.Obs. & \num{2229}\\
+R2 & \num{0.147}\\
+R2 Adj. & \num{0.145}\\
+AIC & \num{1091.2}\\
+BIC & \num{1136.8}\\
+Log.Lik. & \num{-537.580}\\
+F & \num{63.973}\\
+RMSE & \num{0.31}\\
+\hline
+\end{tabular}
+\end{table}
+\subsection*{Q7-d}
+\begin{table}[h]
+\centering
+\begin{tabular}[t]{lc}
+\hline
+  & Model 4\\
+\hline
+(Intercept) & \num{0.708}\\
+ & (\num{0.116})\\
+hgc & \num{0.050}\\
+ & \vphantom{1} (\num{0.004})\\
+collegenot college grad & \num{0.168}\\
+ & (\num{0.026})\\
+tenure & \num{0.038}\\
+ & (\num{0.004})\\
+ & \num{-0.001}\\
+ & (\num{0.0002})\\
+age & \num{0.0002}\\
+ & (\num{0.002})\\
+marriedsingle & \num{-0.027}\\
+ & (\num{0.014})\\
+\hline
+Num.Obs. & \num{2229}\\
+Num.Imp. & \num{5}\\
+R2 & \num{0.147}\\
+R2 Adj. & \num{0.145}\\
+\hline
+\end{tabular}
+\end{table}
+
+the coefficient I get for hgc is 0.050, which is much lower than the true value. The coefficients I get for hgc across the models are the same, though I am skeptical about this.
+\section*{Q8}
+I have explored data from FEMA, this dataset includes 18 natural incidents on the county level, and it is a very nice panel data set. The model I will be using is an event study (ES) model, based on Adrien Bilal \& Esteban Rossi-Hansberg (2023)
+\end{document}
