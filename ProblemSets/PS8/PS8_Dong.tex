@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multirow}
+\title{Problem Set 8}
+\author{Bowei Dong }
+\date{March 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Q5}
+
+\begin{table}[h]
+\centering
+\caption{Comparison of True Beta and Estimated Beta}
+\label{tab:beta_comparison}
+\begin{tabular}{|cc|c}
+\hline
+\textbf{True Beta} & \textbf{Estimated Beta} \\
+\hline
+1.50 & 1.5005793 \\
+-1.00 & -0.9956182 \\
+-0.25 & -0.2486498 \\
+0.75 & 0.7471903 \\
+3.50 & 3.5017669 \\
+-2.00 & -1.9994365 \\
+0.50 & 0.5011339 \\
+1.00 & 0.9987400 \\
+1.25 & 1.2528300 \\
+2.00 & 1.9993846 \\
+\hline
+\end{tabular}
+\end{table}
+According to table \ref{tab:beta_comparison}, true $\beta$ and estimated $\beta$ are highly close. 
+
+\section*{Q7}
+
+%LBFGS value of controls: 1.500579 -0.9956182 -0.2486498 0.7471903 3.501767 -1.999436 0.5011339 0.99874 1.25283 1.999385
+
+%NELDERMEAD value of controls: 1.50021 -0.9962025 -0.2483371 0.7469738 3.50032 -1.997343 0.5034537 0.9972504 1.251888 2.000062
+
+
+
+
+\begin{table}[h]
+\centering
+\caption{Comparison of Optimization Results}
+\label{tab:comparison_results}
+\begin{tabular}{|cc|}
+\hline
+\textbf{LBFGS Algorithm} & \textbf{Nelder-Mead Algorithm} \\
+\hline
+1.500579 & 1.50021 \\
+-0.9956182 & -0.9962025 \\
+-0.2486498 & -0.2483371 \\
+0.7471903 & 0.7469738 \\
+3.501767 & 3.50032 \\
+-1.999436 & -1.997343 \\
+0.5011339 & 0.5034537 \\
+0.99874 & 0.9972504 \\
+1.25283 & 1.251888 \\
+1.999385 & 2.000062 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+According to table \ref{tab:comparison_results}, L-BFGS algorithmand Nelder-Mead
+algorithm have given me very similar results.
+
+\section*{Q9}
+
+\begin{table}[h]
+\centering
+\begin{tabular}[t]{lc}
+\hline
+  & Model 1\\
+\hline
+X1 & \num{1.501}\\
+ & \vphantom{9} (\num{0.002})\\
+X2 & \num{-0.996}\\
+ & \vphantom{8} (\num{0.002})\\
+X3 & \num{-0.249}\\
+ & \vphantom{7} (\num{0.002})\\
+X4 & \num{0.747}\\
+ & \vphantom{6} (\num{0.002})\\
+X5 & \num{3.502}\\
+ & \vphantom{5} (\num{0.002})\\
+X6 & \num{-1.999}\\
+ & \vphantom{4} (\num{0.002})\\
+X7 & \num{0.501}\\
+ & \vphantom{3} (\num{0.002})\\
+X8 & \num{0.999}\\
+ & \vphantom{2} (\num{0.002})\\
+X9 & \num{1.253}\\
+ & \vphantom{1} (\num{0.002})\\
+X10 & \num{1.999}\\
+ & (\num{0.002})\\
+\hline
+Num.Obs. & \num{100000}\\
+R2 & \num{0.991}\\
+R2 Adj. & \num{0.991}\\
+AIC & \num{144993.2}\\
+BIC & \num{145097.9}\\
+Log.Lik. & \num{-72485.615}\\
+RMSE & \num{0.50}\\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
+
+
